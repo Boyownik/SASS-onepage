@@ -1,0 +1,43 @@
+.main-header {
+    position: absolute;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    .logo {
+        display: flex;
+        align-items: center;
+        i {
+            @include icon ($colorSecondary,$iconSize);
+            margin-right: 7px;
+        }
+        h1 {
+            color: $fontColorPrimary;
+            font-weight: $fontWeightPrimary;
+            font-size: $fontSizePrimary;
+        }
+    }
+    .header-contact {
+        display: flex;
+        align-items: center;
+        i {
+            @include icon ($fontColorPrimary,$iconSize);
+            transform: rotate(90deg);
+            margin-right: 7px;
+        }
+        .call-us {
+            display: block;
+            h1 {
+                margin: 0;
+                color: $fontColorPrimary;
+                font-weight: $fontWeightSecondary;
+                font-size: $fontSizeTertiary;
+                }
+            p {
+                margin: 0;
+                color: $fontColorPrimary;
+                font-weight: $fontWeightSecondary;
+                font-size: $fontSizeSecondary;
+            }
+        }
+    }
+}

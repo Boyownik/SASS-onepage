@@ -1,0 +1,32 @@
+footer {
+    color: $fontColorPrimary;
+    background-color: $colorTertiary;
+    .container {
+    justify-content: space-around;
+        .footer-item1 {
+            i {
+                 @include icon (black, $iconSizeSecondary);
+                 transform: rotate(90deg);
+                 background-color: $colorSecondary;
+                 padding: 10px 10px;
+                 margin-left: 13px;
+                 margin-top: 13px;
+            }
+            p {
+                display: block;
+            }
+        }
+        .footer-item2 {
+            i {
+                @include icon (black, $iconSizeSecondary);
+                background-color: $colorSecondary;
+                padding: 10px 10px;
+                margin-left: 13px;
+                margin-top: 13px;
+            }
+            p {
+                display: block;
+            }
+        }
+     }
+}

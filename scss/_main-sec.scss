@@ -1,0 +1,53 @@
+.main-sec {
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    .content-holder {
+        width: 370px;
+        margin-top: 200px;
+        margin-right: 100px;
+        h2,h3 {
+            margin: 5px 5px;
+            color: $fontColorPrimary;
+            font-weight: $fontWeightPrimary;
+            font-size: $fontSizeQuatenary;
+            span {
+                color: $colorSecondary;
+            }
+        }
+        form {
+            margin-top: 20px;
+            background-color: $colorPrimary;
+            padding: 15px 5px;
+            header {
+                margin: 10px;
+                color: $fontColorPrimary;
+                font-weight: $fontWeightPrimary;
+                font-size: 1.2em;
+            }
+            fieldset {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                border: none;
+                input:not([type=submit]),textarea {
+                    @include input;
+                    margin-top: 10px;
+                    width: 100%;
+                }
+                .sub {
+                    background-color: $colorSecondary;
+                    font-weight: $fontWeightPrimary;
+                    font-size: 1.2em;
+                    color: black;
+                    padding: 18px 27px;
+                    margin-top: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
